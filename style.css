@@ -1,0 +1,22 @@
+canvas{
+    border: 2px solid black;
+}
+body{
+    text-align: center;
+}
+
+.botao-cor {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px black solid;
+    
+}
+
+#paleta-cor-linha, #paleta-cor-fundo,#aolado  {
+    display: flex;
+    justify-content: center;
+} 
+
+

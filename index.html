@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="canvas" width="900" height="700"></canvas>
+    <div id="aolado">
+        <div id="paleta-cor-fundo">
+            <div id="paleta-cor-fundo">
+                <div class="botao-cor" style="background-color: white;" onclick="definirCorFundo('white')"></div>
+                <div class="botao-cor" style="background-color: lightgray;" onclick="definirCorFundo('lightgray')">
+                </div>
+                <div class="botao-cor" style="background-color: beige;" onclick="definirCorFundo('beige')"></div>
+                <div class="botao-cor" style="background-color: lavender;" onclick="definirCorFundo('lavender')"></div>
+                <!-- Adicione mais cores de fundo conforme necessário -->
+            </div>
+            <!-- Adicione mais cores de fundo conforme necessário -->
+
+        </div>
+
+
+        <!-- UI para selecionar a cor da linha -->
+        <div id="paleta-cor-linha">
+            <div class="botao-cor" style="background-color: red;" onclick="definirCorLinha('red')"></div>
+            <div class="botao-cor" style="background-color: green;" onclick="definirCorLinha('green')"></div>
+            <div class="botao-cor" style="background-color: black;" onclick="definirCorLinha('black')"></div>
+            <!-- Adicione mais cores de linha conforme necessário -->
+
+        </div>
+        <div id="paleta-formas">
+            <button onclick="definirForma('retangulo')">Quadrado</button>
+            <button onclick="definirForma('circulo')">Círculo</button>
+            <button onclick="definirForma('lapis')">Lápis</button>
+            <button onclick="ativarModoPreenchimento()">Ativar/Desativar Preenchimento</button>
+        </div>
+    
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
